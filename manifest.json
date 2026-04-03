@@ -1,7 +1,17 @@
 {
   "manifest_version": 3,
-  "name": "AnúncioAnalyzer",
-  "version": "0.0.1",
+  "name": "AnuncioAnalyzer",
+  "version": "0.0.2",
+  "host_permissions": ["https://api.mercadolibre.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["page-fetch.js"],
+      "matches": ["https://*.mercadolivre.com.br/*"]
+    }
+  ],
   "content_scripts": [
     {
       "matches": ["https://*.mercadolivre.com.br/*"],

@@ -15,10 +15,15 @@
   align-items: center;
   font-size: 14px;
   font-weight: 400;
-  margin: 2px 0px;
+  gap: 8px;
+  margin: 6px 0px;
 }
 
-.mlext-container li > span {
+.mlext-container li > strong {
+  font-weight: 600;
+}
+
+.mlext-badge {
   padding: 2px 4px;
   background-color: #fff;
   color: hsl(113, 89%, 48%);
@@ -29,9 +34,37 @@
   border-radius: 4px;
   border-color: hsl(113, 89%, 48%);
   cursor: pointer;
+  white-space: nowrap;
 }
 
-.mlext-container li > span:hover {
+.mlext-badge:hover {
   background-color: hsl(113, 89%, 48%);
   color: #fff;
+}
+
+.mlext-badge--success {
+  color: hsl(113, 89%, 32%);
+  border-color: hsl(113, 89%, 32%);
+}
+
+.mlext-badge--success:hover {
+  background-color: hsl(113, 89%, 32%);
+}
+
+.mlext-badge--warning {
+  color: hsl(38, 92%, 40%);
+  border-color: hsl(38, 92%, 40%);
+}
+
+.mlext-badge--warning:hover {
+  background-color: hsl(38, 92%, 40%);
+}
+
+.mlext-badge--error {
+  color: hsl(0, 72%, 45%);
+  border-color: hsl(0, 72%, 45%);
+}
+
+.mlext-badge--error:hover {
+  background-color: hsl(0, 72%, 45%);
 }
